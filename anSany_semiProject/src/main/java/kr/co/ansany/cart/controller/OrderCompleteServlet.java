@@ -46,7 +46,6 @@ public class OrderCompleteServlet extends HttpServlet {
 		String orderName = request.getParameter("orderer-name");
 		String [] addressArr = request.getParameterValues("delivery-address");
 		String orderAddr = String.join(" ",addressArr);
-		System.out.println(orderAddr);
 		String orderPhone = request.getParameter("orderer-phone");
 		
 		//3.비즈니스로직
